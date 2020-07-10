@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+} 
+.vplaybox{
+  text-align: center;
+  background-color: #f0f8ff00;
+}
+.vplayloop {
+  background-color: #f0f8ff00;
+  z-index: 1;
+  width: 85px;
+  height: auto;
+    -webkit-animation:spin 1s linear infinite;
+    -moz-animation:spin 1s linear infinite;
+  animation:spin 2s linear infinite;
+border-radius: 5%;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+}
+.vplayloopoff {
+  position: absolute;
+  z-index: 1;
+  width: 85px;
+  height: auto;
+}
+#Play {
+  width: 95px;
+  height: 95px;
+  position: absolute;
+  font-size: 5em;
+  color: #fff;
+  border: none;
+  border-radius: 5em;
+  background-color: rgba(255,255,255, .0);
+  z-index: 2;
+  left: auto;
+  text-decoration: none;
+  background-color: #f0f8ff00;
+  }
+#Play:hover{
+  text-shadow: -10px 10px 10px rgba(255,25,128, .5);
+  transition-duration: 1s;
+}
+.glyphicon{
+  background-color: #f0f8ff00;
+}
+
+#vsec,#vsec1,#vsec2,#vsec3,#vsec4{
+  text-align: center;
+  height: 100vh; 
+  z-index: auto;
+  flex: auto;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 0.5em;
+}
+.navbar-brand > img {
+  display: block;
+  height:95%;
+}
+.bg-dark {
+  background-color: #343a40 !important;
+}
+html{
+  scroll-behavior: smooth;
+}
+#postin{
+      width: 35%;
+}
+
+@media (max-width: 360px) {
+ #vsec,#vsec1,#vsec2,#vsec3,#vsec4{
+    text-align: center;
+    height: 100vh; 
+    z-index: auto;
+    flex: auto;
+    margin-top: 3em;
+}
+#postin{
+      width: 100%;
+}
+ footer{
+    background-color: dimgrey;
+    width: 100%;
+    height: 100px;
+}   
+}
+
+footer{
+    background-color: dimgrey;
+    width: 100%;
+    height: 100px;
+    
+}
